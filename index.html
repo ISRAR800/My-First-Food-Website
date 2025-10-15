@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshMart | Fresh Grocery Delivered</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Fresh<span>Mart</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Products</a></li>
+          <li><a href="./about.html">About</a></li>
+
+          <li><a href="#" id="cart-toggle">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Fresh Grocery Delivered</h2>
+      <p>Get fresh fruits, vegetables & daily essentials delivered to your doorstep.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="products">
+    <h2>Our Products</h2>
+    <div class="products" id="product-list">
+      <!-- Products dynamically generated from JS -->
+    </div>
+  </section>
+
+  <!-- Cart Popup -->
+  <div id="cart" class="cart hidden">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p>
+    <button id="close-cart" class="btn small">Close Cart</button>
+  </div>
+    <!-- Eid Special Sale Section -->
+  <section class="eid-sale" id="eid-sale">
+    <h2>🌙 Happy New Year Sale</h2>
+    <p class="eid-subtext">Celebrate New Year with amazing discounts on your favorite items!</p>
+    <div class="products" id="eid-product-list">
+      <!-- Eid products dynamically added via JS -->
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FreshMart. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
